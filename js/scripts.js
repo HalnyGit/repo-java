@@ -1,5 +1,10 @@
 // Zadanie 8
-var name = prompt('Wpisz swoje imię');
-alert('Witaj, ' + name);
-console.log('Witaj, ' + name);
+var a = prompt('Podaj podstawę'),
+	h = prompt('Podaj wysokość'),
+	triangleArea = a*h/2;
+console.log('Pole trójkąta o podstawie a:' + a + ' i wysokości h:' + h + ' wynosi:' + triangleArea);
+alert('Pole trójkąta wynosi:' + triangleArea);
+
+
+
 
