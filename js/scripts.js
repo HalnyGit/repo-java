@@ -1,5 +1,10 @@
 // Zadanie 8
-var name = prompt('Wpisz swoje imię');
-alert('Witaj, ' + name);
-console.log('Witaj, ' + name);
+var star = '*';
+
+function rysujChoinke(parametr) {
+	for (n = 0; n < 6; n = n++)
+	console.log(parametr);
+};
+
+rysujChoinke(star);
 
