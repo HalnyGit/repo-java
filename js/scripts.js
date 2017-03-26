@@ -5,10 +5,11 @@ var triangle1Area = 0,
 
 function getTriangleArea(a,h) {
 	if ((a<=0) || (h<=0)) {
-	console.log('Nieprawidłowe dane');
+	var result = 'Nieprawidłowe dane';
 } else {
-	return a * h / 2
+	result = a * h / 2;
 };
+	return result;
 };
 
 triangle1Area=getTriangleArea(-2,10);
