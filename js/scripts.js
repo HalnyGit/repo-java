@@ -1,5 +1,15 @@
 // Zadanie 8
-var name = prompt('Wpisz swoje imię');
-alert('Witaj, ' + name);
-console.log('Witaj, ' + name);
+var add = document.getElementById('addElem'),
+	lista = document.getElementById('list'),
+	itemsByTagName = lista.getElementsByTagName('li'),
+	n = (itemsByTagName.length);
 
+function addOnclickItem() {
+	var newElem = document.createElement('li');
+	newElem.innerHTML = ('item' + ' ' + (++n - 1));
+	lista.appendChild(newElem);
+};
+
+add.addEventListener('click', function(e) {
+	addOnclickItem()
+});
